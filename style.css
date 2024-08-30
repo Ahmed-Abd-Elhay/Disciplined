@@ -48,6 +48,12 @@ header .container .logo {
     width: 200px;
 }
 
+header .container .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header .container .logo img {
     width: 100%;
     max-width: 100%;
@@ -253,12 +259,24 @@ header .container .links-container .language-change:active {
 
 @media (max-width: 500px) {
 
+    header {
+        padding: 40px 0;
+    }
+
+    header .container {
+        height: 0;
+    }
+
     header .container .logo {
         width: 160px;
     }
 
     header .container .links-container {
         gap: 10px;
+    }
+
+    header .container .burger-menu .burger {
+        top: 80px;
     }
 
 }
@@ -416,10 +434,16 @@ header .container .links-container .language-change:active {
 }
 
 @media (max-width: 900px) {
+
+    .hero {
+        height: auto;
+        padding: 10px 0;
+        margin: 50px 0;
+    }
+
     .hero .container {
         flex-direction: column-reverse;
         gap: 30px;
-        margin-top: 50px;
     }
 
     .hero .container .left-side {
@@ -492,7 +516,6 @@ header .container .links-container .language-change:active {
     }
 
 }
-
 
 /* =============== End Hero ========================== */
 
@@ -703,7 +726,7 @@ header .container .links-container .language-change:active {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 60px;
 }
 
@@ -712,7 +735,7 @@ header .container .links-container .language-change:active {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 400px;
+    width: 370px;
     max-width: 95%;
     margin-bottom: 20px;
     text-align: center;
@@ -782,12 +805,21 @@ header .container .links-container .language-change:active {
     transform: translateY(-10px);
 }
 
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+    .services .container {
+        flex-wrap: wrap;
+    }
+}
+
 /* =============== End Survices ============================= */
 
 
 /* =============== Start Global Responsive ====================== */
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
     .container {
         width: 90% !important;
     }
