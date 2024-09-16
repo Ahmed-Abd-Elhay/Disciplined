@@ -118,7 +118,7 @@ header .container .burger-menu .icon {
 header .container .burger-menu .icon div {
     width: 100%;
     height: 5px;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(255, 255, 255);
     border-radius: 33px;
     transition: .4s;
     -webkit-transition: .4s;
@@ -492,7 +492,6 @@ header .container .links-container .language-change:active {
 
     .hero .container .left-side .info p {
         line-height: 1.4;
-        color: #000000b5;
     }
 
     .hero .container .right-side {
