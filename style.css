@@ -32,7 +32,9 @@ a {
 header {
     width: 100%;
     /* background: linear-gradient(45deg, #f7f7f7, #fbfbfb); */
-    background: linear-gradient(to right, #590503, #5e1513, #6a2726, #cab686);
+    /* background: linear-gradient(to right, #590503, #5e1513, #6a2726, #cab686); */
+    /* background: linear-gradient(to right, #bf000e, #000000, #000000, #bf000e); */
+    background: linear-gradient(to right, #000000, #89000a, #89000a, #000000);
     padding: 30px 0;
     position: relative;
 }
@@ -294,7 +296,9 @@ header .container .links-container .language-change:active {
 
 .hero {
     height: calc(100vh - 104px);
-    background: linear-gradient(to right, #500107, #6A0506, #780706);
+    /* background: linear-gradient(to right, #500107, #6A0506, #780706); */
+    /* background: linear-gradient(to right, #bf000e, #000000, #000000, #bf000e); */
+    background: linear-gradient(to right, #000000, #89000a, #89000a, #000000);
 }
 
 .hero .container {
@@ -302,7 +306,7 @@ header .container .links-container .language-change:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 45px;
 }
 
 .hero .container .left-side {
@@ -407,7 +411,7 @@ header .container .links-container .language-change:active {
 }
 
 .hero .container .right-side {
-    flex: 1;
+    flex: 2;
 }
 
 .hero .container .right-side img {
@@ -418,6 +422,34 @@ header .container .links-container .language-change:active {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+.hero .container .practice {
+    flex: 1;
+    color: white;
+}
+
+.hero .container .practice h3 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.hero .container .practice .box {
+    margin: 55px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .container .practice .box img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+.hero .container .practice .box .text {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 /* Responsive */
